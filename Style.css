@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  background-image: url("./bgimg.png");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px; 
+  margin-bottom: 40px; 
+  margin-top: 40px;
+}
+
+.logo img {
+  height: 60px;
+  object-fit: contain;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none; 
+  color: rgb(0, 0, 0); 
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s; 
+  font-weight: bold; 
+}
+
+.navbar-links a:hover {
+  background-color: rgb(185, 141, 88); 
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-container i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.sign-up {
+  height: 40px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(185, 141, 88);
+  color: white;
+  cursor: pointer;
+  font-weight: bold; 
+  transition: background 0.3s; 
+}
+.sign-up:hover {
+  background-color: #4CAF50; }
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.mobile-menu a {
+  padding: 10px 20px;
+  text-align: right;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0); 
+  text-decoration: none; 
+}
+
+.mobile-menu a:hover {
+  background-color: rgb(185, 141, 88);
+  color: white;
+}
+@media (max-width: 768px) {
+  .navbar-links {
+      display: none; 
+  }
+
+  .menu-toggle {
+      display: flex; 
+  }
+}
+
+@media (max-width: 480px) {
+  .sign-up {
+      width: 100%;
+  }
+}
+.Message_content h1{
+   font-size:70px;
+   color: white;
+   font-weight: 100;
+}
+.Message_content{
+    padding: 12%;
+}
+.Message_content h2{
+    margin-top: 20px;
+    color: white;
+    font-weight: 100;
+ }
+ .Book{
+    height: 50px;
+    width: 157px;
+    border: none;
+    border-radius: 9px;
+    background-color:rgb(185,141,88);
+    color: white;
+    margin-top: 20px;
+ }
+ .Visit{
+    height: 50px;
+    width: 157px;
+    border: none;
+    border-radius: 9px;
+    background-color:white;
+    color:rgb(185,141,88) ;
+    margin-top: 8%;
+    margin-left: 10px;
+
+ }
+ .Visit:hover{
+    background-color:rgb(185,141,88);
+    color: white;
+ }
+  .Book:hover{
+    background-color:white;
+    color:rgb(185,141,88) ;
+ }
+
+ .Body_content{
+    padding:5%;
+    margin-top: 20%;
+    display: flex;
+    justify-content:space-between;
+ }
+ 
+ button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
+ .Logo_container img{
+    height:75px;
+    width: 75px;
+    margin-right: 30px;
+    margin-top: 20px;
+ }
+
+.Para1 {
+  display: flex;
+  margin-right: 50px;
+  flex-direction: column; 
+  align-items: center;
+}
+.Para_container p{
+  margin-top: 10%;
+  line-height: 1.6;
+}
+.Para_container h5{
+  margin-top: 10%;
+}
+
+@media (min-width: 768px) {
+  .Body_content {
+      flex-direction: row; 
+  }
+  .Para1 {
+      flex-direction: row; 
+  }
+}
+
+@media (max-width: 767px) {
+  .Body_content {
+      flex-direction: column; 
+      align-items: center;
+  }
+  .Para1 {
+      margin-right: 0;
+      margin-bottom: 20px; 
+  }
+  .Logo_container img {
+      margin: 20px auto;
+  }
+  .Para_container h2, .Para_container p, .Para_container h5 {
+      text-align: center; 
+  }
+}
+ 
+
+ .Box {
+  background-image: url("./bg2.png");
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  height: 100vh; 
+  width: 100vw; 
+}
+
+.Content_parent {
+  display: flex;
+  flex-direction: row; 
+  width: 75vw;
+  margin-left: 10%;
+}
+
+.Tea_img_container img {
+  height: 440px;
+  width: 620px;
+  object-fit: contain;
+  padding: 8%;
+}
+
+.Info_container {
+  margin-left: 5%;
+  margin-top: 4%;
+}
+.Types_container{
+  display: flex;
+}
+.Info_container p{
+  margin-top: 10%;
+  line-height: 1.6;
+}
+.Info_container h2{
+  line-height: 1.6;
+}
+.Types1{
+  display: flex;
+}
+.Para p{
+  color:rgb(136,136,162) ;
+  margin-top:-2px;
+  margin-left: 8px;
+}
+.Types_container{
+  margin-top: 5%;
+}
+.Types_parent{
+  margin-top: 10%;
+}
+
+@media (max-width: 767px) {
+  .Content_parent {
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+
+  .Tea_img_container img {
+    height: auto; 
+    width: 90%; 
+  }
+
+  .Info_container {
+    margin-top: 5%; 
+    text-align: center; 
+  }
+}
+
+ 
+.Menu h1 {
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  margin: 10px auto;
+}
+
+.Menu p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgb(185,141,88);
+  margin-top: 10%;
+}
+.Image_Parent_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.Image {
+  flex: 1 1 30%; 
+  max-width: 300px;
+  text-align: center;
+}
+
+.Image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.line {
+  width: 80%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}
+
+.Image p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(185,141,88);
+}
+
+@media (max-width: 768px) {
+  .Menu h1 {
+      font-size: 40px; 
+      line-height: 1.2;
+      margin-top: 20px;
+  }
+
+  .Menu p {
+      font-size: 16px; 
+      margin-top: 15px;
+      padding: 0 10px; 
+  }
+
+  .Image_Parent_container {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px; }
+
+  .Image {
+      max-width: 90%; 
+      margin: 20px 0;
+  }
+}
+
+
+
+
+
+ 

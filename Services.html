@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="./Services.css">
+<body>
+  
+    <div class="navbar">
+        <div class="logo">
+            <img src="./cafee.png" alt="Coffee Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="index.html">HOME</a>
+            <a href="Services.html">SERVICES</a>
+            <a href="About.html">ABOUT</a>
+            <a href="Contact.html">CONTACT</a>
+        </div>
+        <div class="icon-container">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-bag"></i>
+            <button class="sign-up">
+                <a href="./Signup.html" style="color: white; text-decoration: none;">SIGN UP</a>
+            </button>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">HOME</a>
+        <a href="Services.html">SERVICES</a>
+        <a href="About.html">ABOUT</a>
+        <a href="Contact.html">CONTACT</a>
+    </div>
+
+
+    <div class="Services">
+        <center><h1 style="color: white;">Our Services</h1></center>
+        <p class="serviceintro">Explore our range of services designed to bring you the finest coffee experiences.</p>
+        <div class="servicecard">
+            <h2>Coffee Tasting</h2>
+            <p>Discover a world of flavors with our curated coffee tasting sessions, where you'll sample a variety of specialty coffees.</p>
+        </div>
+        <div class="servicecard">
+            <h2>Barista Training</h2>
+            <p>Join our barista training sessions to learn the art of brewing the perfect cup, from espresso techniques to latte art.</p>
+        </div>
+        <div class="servicecard">
+            <h2>Coffee Catering</h2>
+            <p>Elevate your events with our coffee catering service, offering a range of specialty drinks for your guests to enjoy.</p>
+        </div>
+        <div class="servicecard">
+            <h2>Customized Coffee Blends</h2>
+            <p>Work with us to create your own unique coffee blend, perfect for businesses or personal enjoyment.</p>
+        </div>
+    </div>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
+        });
+   
+    </script>
+</body>
+</html>
