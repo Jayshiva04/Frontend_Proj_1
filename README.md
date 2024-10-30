@@ -1,1 +1,2 @@
-# Frontend_Proj_1
+## Live Demo
+Check out the live demo of the project at [Netlify](https://coffeeshoppy.netlify.app/).
